@@ -14,7 +14,7 @@
             <ColumnDefinition Width="10*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="60"></RowDefinition>
+            <RowDefinition Height="100"></RowDefinition>
             <RowDefinition Height="25*"></RowDefinition>
             <RowDefinition Height="75*"></RowDefinition>
             <RowDefinition Height="60"></RowDefinition>
