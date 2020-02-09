@@ -1,0 +1,42 @@
+﻿<Window x:Class="WPF_3._0.GratitudeForReg"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_3._0"
+        mc:Ignorable="d"
+        Title="GratitudeForReg" Height="720" Width="1280" ResizeMode="NoResize">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="15*"></ColumnDefinition>
+            <ColumnDefinition Width="50*"></ColumnDefinition>
+            <ColumnDefinition Width="50*"></ColumnDefinition>
+            <ColumnDefinition Width="15*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"></RowDefinition>
+            <RowDefinition Height="25*"></RowDefinition>
+            <RowDefinition Height="75*"></RowDefinition>
+            <RowDefinition Height="60"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Label Grid.ColumnSpan="4" Background="Gray" />
+        <Button x:Name="exit" HorizontalAlignment="Left" Width="90" Height="30" Margin="10" FontSize="20">Назад</Button>
+        <TextBlock Grid.Column="1" TextAlignment="Left" FontSize="40" Foreground="White"> MARATHON SKILLS 2016</TextBlock>
+        <Button x:Name="logout" Grid.Column="4" HorizontalAlignment="Right" Width="90" Height="30" Margin="10" FontSize="20" Content="Logout" />
+        <StackPanel Grid.Row="1" Grid.RowSpan="2" Grid.Column="0" Grid.ColumnSpan="4" HorizontalAlignment="Center">
+            <TextBlock HorizontalAlignment="Center" FontSize="40" Margin="10">Спасибо за Вашу регистрацию в качестве бегуна!</TextBlock>
+            <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Width="1000" FontSize="20" Margin="0 0 0 20" TextWrapping="Wrap">Спасибо за Вашу регистрацию в качестве бегуна в Marathon Skills 2016!</TextBlock>
+            <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Width="1000" FontSize="20" TextWrapping="Wrap">С Вами свяжутся по поводу оплаты.</TextBlock>
+
+        </StackPanel>
+        <StackPanel Grid.Row="2" Grid.ColumnSpan="4">
+            <Button Width="150" Margin="5 100 5 5 " FontSize="20" Height="40" Content="Ок"/>
+        </StackPanel>
+
+        <Border Grid.Row="4" Grid.ColumnSpan="4" Background="Gray">
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20" Foreground="LightGray">
+                X Дней, Y Часов и Z Минут до старта марафона!
+            </Label>
+        </Border>
+    </Grid>
+</Window>

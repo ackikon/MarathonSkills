@@ -1,0 +1,131 @@
+﻿<Window x:Class="WPF_3._0.RegOnMaraphonPatter"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_3._0"
+        mc:Ignorable="d"
+        Title="RegOnMaraphonPatter" Height="720" Width="1280" ResizeMode="NoResize">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10*"></ColumnDefinition>
+            <ColumnDefinition Width="35*"></ColumnDefinition>
+            <ColumnDefinition Width="25*"></ColumnDefinition>
+            <ColumnDefinition Width="10*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"></RowDefinition>
+            <RowDefinition Height="25*"></RowDefinition>
+            <RowDefinition Height="75*"></RowDefinition>
+            <RowDefinition Height="60"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Label Grid.ColumnSpan="4" Background="Gray" />
+        <Button x:Name="exit" HorizontalAlignment="Left" Width="90" Height="30" Margin="10" FontSize="20">Назад</Button>
+        <TextBlock Grid.Column="1" TextAlignment="Left" FontSize="40" Foreground="White"> MARATHON SKILLS 2016</TextBlock>
+        <Button x:Name="logout" Grid.Column="4" HorizontalAlignment="Right" Width="90" Height="30" Margin="10" FontSize="20" Content="Logout" />
+        <StackPanel Grid.Row="1" Grid.RowSpan="2" Grid.Column="0" Grid.ColumnSpan="4" HorizontalAlignment="Center">
+            <TextBlock HorizontalAlignment="Center" FontSize="40" Margin="0 0 0 10">Регистрация на марафон</TextBlock>
+            <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Width="1000" FontSize="20" TextWrapping="Wrap">Пожалуйста заполните всю информацию, чтобы зарегестрироваться на Marathon Skills 2016
+             проводимом в Москве. Russia. С Вами свяжуться после регестрации для уточнения оплаты и другой информации</TextBlock>
+        </StackPanel>
+        <Grid Grid.Row="2" Grid.ColumnSpan="4">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <StackPanel Width="500">
+                <TextBlock TextAlignment="Center" FontSize="35" Foreground="Gray" FontWeight="DemiBold" Margin="0 0 0 10" Text="Вид марафона"/>
+                <StackPanel Orientation="Horizontal">
+                    <CheckBox HorizontalContentAlignment="Center" VerticalAlignment="Center">
+                        <CheckBox.LayoutTransform>
+                            <ScaleTransform ScaleX="2" ScaleY="2" />
+                        </CheckBox.LayoutTransform>
+                    </CheckBox>
+                    <TextBlock FontSize="30"  Margin="10 0 0 0" VerticalAlignment="Center" Text="42km - Полный марафон ($145)" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <CheckBox HorizontalContentAlignment="Center" VerticalAlignment="Center">
+                        <CheckBox.LayoutTransform>
+                            <ScaleTransform ScaleX="2" ScaleY="2" />
+                        </CheckBox.LayoutTransform>
+                    </CheckBox>
+                    <TextBlock FontSize="30"  Margin="10 0 0 0" VerticalAlignment="Center" Text="21km - Полумарафон ($75)" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <CheckBox HorizontalContentAlignment="Center" VerticalAlignment="Center">
+                        <CheckBox.LayoutTransform>
+                            <ScaleTransform ScaleX="2" ScaleY="2" />
+                        </CheckBox.LayoutTransform>
+                    </CheckBox>
+                    <TextBlock FontSize="30"  Margin="10 0 0 0" VerticalAlignment="Center" Text="5km - Малая дистанция ($20)" />
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Grid.Column="2" Grid.RowSpan="2">
+                <TextBlock TextAlignment="Center" FontSize="35" Foreground="Gray" FontWeight="DemiBold" Margin="0 0 0 10" Text="Варианты комплектов"/>
+                <StackPanel Orientation="Horizontal">
+                    <RadioButton VerticalContentAlignment="Center">
+                        <RadioButton.LayoutTransform>
+                            <ScaleTransform ScaleX="2" ScaleY="2" />
+                        </RadioButton.LayoutTransform>
+                    </RadioButton>
+                    <TextBlock FontSize="25"  Margin="10 0 0 0" VerticalAlignment="Center">                        
+                            <Span FontWeight="Bold">Вариант А ($0):</Span> Номер бегуна + RFID браслет.
+                    </TextBlock>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <RadioButton VerticalContentAlignment="Center">
+                        <RadioButton.LayoutTransform>
+                            <ScaleTransform ScaleX="2" ScaleY="2" />
+                        </RadioButton.LayoutTransform>
+                    </RadioButton>
+                    <TextBlock FontSize="25" Width="550" Height="70" Margin="10 0 0 0" VerticalAlignment="Center" TextWrapping="Wrap">                        
+                            <Span FontWeight="Bold">Вариант B ($20):</Span> Вариант А + бейсболка + бутылка воды.
+                    </TextBlock>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <RadioButton VerticalContentAlignment="Center">
+                        <RadioButton.LayoutTransform>
+                            <ScaleTransform ScaleX="2" ScaleY="2" />
+                        </RadioButton.LayoutTransform>
+                    </RadioButton>
+                    <TextBlock FontSize="25" Width="550" Height="70" Margin="10 0 0 0" VerticalAlignment="Center" TextWrapping="Wrap">                        
+                            <Span FontWeight="Bold">Вариант C ($45):</Span> Вариант В + футболка + сувенирный буклет.
+                    </TextBlock>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Grid.Row="1" Width="550">
+                <TextBlock TextAlignment="Center" FontSize="35" Foreground="Gray" FontWeight="DemiBold" Margin="0 0 0 10" Text="Детали спонсорства"/>
+                <StackPanel Orientation="Horizontal">
+                    <StackPanel HorizontalAlignment="Left">
+                        <TextBlock HorizontalAlignment="Center" FontSize="30" Text="Взнос:" />
+                        <ComboBox  VerticalContentAlignment="Center" FontSize="20" Margin="10" Width="250" Height="40" Text="Enter your email adress">
+                            <ComboBoxItem Content="Фонд Кошек" />
+                        </ComboBox>
+                    </StackPanel>
+                    <StackPanel HorizontalAlignment="Left">
+                        <TextBlock HorizontalAlignment="Center" FontSize="30" Text="Сумма взноса" />
+                        <TextBox VerticalContentAlignment="Center" Foreground="LightGray" FontSize="20" Margin="10" Width="250" Height="40" Text=" $500" />
+                    </StackPanel>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <Button Width="150" Margin="5" FontSize="20" Height="40" Content="Регистрация"/>
+                    <Button Width="150" Margin="5" FontSize="20" Height="40" Content="Отмена"/>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Grid.Row="1" Grid.Column="1" Margin="0 40 0 0">
+                <TextBlock TextAlignment="Center" FontSize="35" Foreground="Gray" FontWeight="DemiBold" Margin="0 0 0 10" Text="Регистрационный взнос"/>
+                <TextBlock TextAlignment="Center" FontSize="80" Foreground="Gray" FontWeight="DemiBold" Margin="0 0 0 10" Text="$500"/>
+            </StackPanel>
+        </Grid>
+        <Border Grid.Row="4" Grid.ColumnSpan="4" Background="Gray">
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20" Foreground="LightGray">
+                X Дней, Y Часов и Z Минут до старта марафона!
+            </Label>
+        </Border>
+    </Grid>
+</Window>
