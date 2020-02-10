@@ -1,0 +1,31 @@
+1.	StartForm
+Кнопка “я хочу стать бегуном”  	--------->		RunnerBranches
+Кнопка “хочу стать спонсором бегуна ”  	--------->		RunnerSponserPattern
+Кнопка “хочу узнать больше о событии”  	--------->		DetailsPattern
+Кнопка “Login ”  			AuthorizationFormPattern
+
+2.	RunnerBranches
+Кнопка “Назад ”  	--------->		StartForm
+Кнопка “Я участвовал ранее ”, “Login”  	--------->		AuthorizationFormPattern
+Кнопка “Я новый участник ” 			 --------->        NewRunnerRegistrationForm
+
+3.	AuthorizationFromPattern
+Кнопка “Назад ” , “Cancel” 	--------->		StartForm
+Кнопка  “Login”  	--------->		Всплывающее окно TestForm
+
+4.	NewRunnerRegistrationForm
+Кнопка “Назад ” , “Отмена” 	--------->		StartForm
+Кнопка  “Регистрация”  	--------->		RegOnMarathonPatter
+
+
+
+
+
+
+
+
+
+
+
+
+
