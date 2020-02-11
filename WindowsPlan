@@ -1,31 +1,83 @@
 1.	StartForm
-Кнопка “я хочу стать бегуном”  	--------->		RunnerBranches
-Кнопка “хочу стать спонсором бегуна ”  	--------->		RunnerSponserPattern
-Кнопка “хочу узнать больше о событии”  	--------->		DetailsPattern
-Кнопка “Login ”  			AuthorizationFormPattern
+Кнопка “я хочу стать бегуном”  --> RunnerBranches
+Кнопка “хочу стать спонсором бегуна ”  --> RunnerSponserPattern
+Кнопка “хочу узнать больше о событии”  --> DetailsPattern
+Кнопка “Login ”  --> AuthorizationFormPattern
 
 2.	RunnerBranches
-Кнопка “Назад ”  	--------->		StartForm
-Кнопка “Я участвовал ранее ”, “Login”  	--------->		AuthorizationFormPattern
-Кнопка “Я новый участник ” 			 --------->        NewRunnerRegistrationForm
+Кнопка “Назад ” --> StartForm
+Кнопка “Я участвовал ранее ”, “Login”  --> AuthorizationFormPattern
+Кнопка “Я новый участник ”  --> NewRunnerRegistrationForm
 
 3.	AuthorizationFromPattern
-Кнопка “Назад ” , “Cancel” 	--------->		StartForm
-Кнопка  “Login”  	--------->		Всплывающее окно TestForm
+Кнопка “Назад ” , “Cancel” --> StartForm
+Кнопка  “Login”  --> Всплывающее окно TestForm
 
 4.	NewRunnerRegistrationForm
-Кнопка “Назад ” , “Отмена” 	--------->		StartForm
-Кнопка  “Регистрация”  	--------->		RegOnMarathonPatter
+Кнопка “Назад ” , “Отмена” --> StartForm
+Кнопка  “Регистрация”  --> RegOnMarathonPatter
+
+5.	RegOnMarathonPattern
+Кнопка “Назад ” , “Отмена”  --> RunnerMenuPattern
+Кнопка  “Logout”  --> StartForm
+Кнопка “Регистрация” --> GratitudeForReg
+
+6.	 RunnerSponsersPattern
+Кнопка “Назад ” , “Отмена” --> StartForm
+Кнопка  “Заплатить”  --> GratitudeForSupporting
 
 
+7.	GratitudeForSupporting 
+Кнопки “Назад ”--> StartForm
 
+8.	GratitudeForReg
+Кнопка “Назад ”, “Ok”--> RunnerMenuPattern
+Кнопка “Logout” --> StartForm
 
+9.	RunnerMenuPattern
+Кнопка “Назад ”, “Logout” --> StartForm
+Кнопка “Pегистрация на марафон” --> RegOnMarathonPattern
+Кнопка “Мои результаты” --> MyRaceResults
+Кнопка “Редактирование профиля” --> ProfileEdit
+Кнопка “Мой спонсор” --> MySponsorship
+Кнопка “Контакты” --> Всплывающая страница
 
+10.	DetailsPattern
+Кнопка “Назад ”, --> StartForm
+Кнопка “MS16” --> MapInfo
+Кнопка “На сколько долгий марафон” --> LongMarathon
+Кнопка “Предыдущие результаты” --> PrevRaceResult
+Кнопка “Список благотворительных организаций” --> ListOfCharities
+Кнопка “BMI ” --> BMI1
+Кнопка “BMR ” --> BMI2
 
+11.	MapInfo 
+Кнопка “Назад ” --> DetailsPattern
+Кнопка “Карта марафона” --> InteractiveMap
 
+12.	InteractiveMap
+Кнопка “Назад ” --> MapInfo 
+Кнопка “Checkpoint” --> Всплывающее окно
 
+13.	ListOfCharities
+Кнопка “Назад ” --> DetailsPattern
 
+14.	PrevRaceResult
+Кнопка “Назад ” --> DetailsPattern
 
+15.	LongMarathon
+Кнопка “Назад ” --> DetailsPattern
+Все кнопки “Photo” --> InteractiveMap
 
+16.	ProfileEdit
+Кнопка “Назад ”, “Сохранить”, “Отмена” --> RunnerMenuPattern
+Кнопка “Logout” --> StartForm
 
+17.	MyRaceResults
+Кнопка “Назад ”--> RunnerMenuPattern
+Кнопка “Logout” --> StartForm
+Кнопка “Показать все результаты” --> PrevRaceResult
 
+18.	MySponsorship
+Кнопка “Назад ”--> RunnerMenuPattern
+Кнопка “Logout” --> StartForm
